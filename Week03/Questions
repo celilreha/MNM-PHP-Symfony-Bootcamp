@@ -1,0 +1,14 @@
+1-) 
+Web siteleri için önemli olan MVC yapısının Symfony'de hazır olması.
+Veritabanı işlemleri ve kullanıcı girişi işlemlerini hazır metotlarla çok kolay bir şekilde yapılabiliyor olması.
+Frontend ve Backend kısımlarının ayrı olmasından dolayı birden fazla insanın çok rahat çalışabileceği bir ortam sunması
+
+2-)
+Symfony'de ilk kurulmla birlikte gelen üç tane ortam değişkeni vardır. Bunlar prod, dev ve test ortamlarıdır. Symfony projesi içerisindeki config klasörünün altında bunları düzenleyebiliriz.
+
+3-)
+composer create-project symfony/website-skeleton my_project_name
+
+4-)
+Symfony'de XML, YAML ve PHP dilleri desteklenirken Laravel'de sadece PHP desteklenmektedir.
+Laravel Symfony'den boyut daha küçük olduğu için daha hızlı çalışır
