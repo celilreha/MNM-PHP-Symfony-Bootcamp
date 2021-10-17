@@ -1,0 +1,18 @@
+<title>{% block title %}Lucky Number!{% endblock %}</title>
+<div class="main-div">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
+    {% for user in users %}
+    <div class="inner-div">
+        <h1 class="h1-title">Hello {{ user.name }}!</h1>
+        <img src="{{ asset('images/CRE.png') }}" alt="Symfony!"/>
+        {% if user.number<33 %}
+        <h1 class="h1-number">Your lucky number is {{ user.number }}</h1>
+        {% elseif user.number<66 %}
+        <h1 class="h1-number2">Your lucky number is {{ user.number }}</h1>
+        {% else %}
+        <h1 class="h1-number3">Your lucky number is {{ user.number }}</h1>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+<script src="{{ asset('js/main.js') }}"></script>
